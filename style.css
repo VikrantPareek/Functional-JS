@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url(/photo.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    left: -50vw;
+    transition: all 0.5s ease-in;
+}
+
+#check:checked ~ .sidebar {
+    transition: all 0.5s ease-in;
+    left: 0;
+}
+
+#menu {
+    font-size: 3rem;
+}
+
+#check:checked ~ #menu {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.title {
+    display: flex;
+    height: 5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.16);
+    margin-bottom: 1rem;
+}
+
+.title p {
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+    font-size: 2.5rem;
+} 
+
+.title label {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 22vw;
+    top: 2.2rem;
+    opacity: 0.5;
+}
+
+.options div {
+    height: 4.5rem;
+}
+
+.options i {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.options span {
+    font-size: 1.75rem;
+}
+
+.options div:hover {
+    /* border: 0.1rem solid rgba(255, 255, 255, 0.16); */
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.345);
+}
+
+.socials {
+    position: absolute;
+    bottom: 5vh;
+    left: 6vw;
+    font-size: 2rem;
+}
+
+.socials i {
+    margin-left: 0.25rem;
+    opacity: 0.5;
+}
+
+.socials i:hover {
+    opacity: 1;
+    scale: 1.25;
+}
